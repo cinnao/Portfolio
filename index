@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<head> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Joti+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Sunshiney&display=swap" rel="stylesheet">   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Joti+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Sunshiney&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</title>
+<title> Portfolio</title>
+</head>
+<body>
+<!-- Header section --------------------------------------------------------------- -->
+<div class="header-section">
+    <div class="row">
+    <div class="col span-1-of-2">
+    <ul class="header-nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#proj">Projects</a></li>
+    <li><a href="#cont">Contact</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+<style>
+        * {
+        margin:0px;
+        color: #180603;
+        padding:0px;  
+    }
+
+    body {
+        cursor: url('path/to/your/custom-cursor.png'), auto;
+        overflow-x: hidden;
+    }
+
+    .header-section {
+        background-image:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("Banner.png");
+        background-size:auto;
+        background-position: center center;
+        height:150px;
+        width:1366px;
+        font-family:sunshiney, serif;
+        position: fixed;
+         z-index: 10;
+        }
+
+.col {
+        display:flex;
+       flex-direction:column;
+       align-items: left;
+        margin:auto auto auto auto;
+        margin-bottom:7%;
+    }
+
+  .header-nav li {
+    float: left;
+    list-style: none;
+    
+    }
+
+    .social-links {
+    list-style: none;
+    float: right;
+}
+
+    .header-nav {
+        display:flex;
+        margin: 35px 35px 35px 35px;
+        float: right;
+    }
+
+    .header-nav li a {
+        font-size:27px;
+        display:flex;
+        margin-right:30px;
+        font-weight:2000px;
+        text-decoration: none;
+        text-shadow: 
+        -1px -1px 0 #ffffff,  
+        1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        1px 1px 0 #ffffff;
+
+    }
+    
+    a[href="#home"]:hover, 
+    a[href="#about"]:hover, 
+    a[href="#proj"]:hover, 
+    a[href="#cont"]:hover { 
+       color:#7f4927;
+       transform:scale(1.1);
+    }
+</style>
+<!-- Large section --------------------------------------------------------------- -->
+      <div id = home></div>
+    <section class="section-home">
+  <img src="0.png" class="overlay1">
+  <img src="1.png" class="overlay2">
+  <div class="home-content">
+    <h1>Welcome to My Portfolio</h1>
+    <div id = about>
+    <p> Hi, my name is Elizabeth Zimmerman! I'm 18 years old and graduated from high school in June 2025. I'm currently majoring in CSET at Thaddeus Stevens School of Technology, located in Lancaster, PA. </p>
+    </div>
+    <div class="skills">
+    <h1> My Skills </h1>
+    <div class="skills-boxes">
+    <ul class="sk">
+    <li>HTML</a></li>
+    <li>CSS</a></li>
+    <li>Javascript</a>
+    <li>Java</a></li>
+        </ul>
+        </div>
+    </div>
+</section>
+<style>
+
+    .home-content p {
+    width:470px;
+    padding-top:65px;
+    font-size:22px;
+    font-family:sunshiney, serif;
+    color:#502e19;
+    position: relative;
+    z-index: 2;  
+    transform:translate(-15%,-30%);
+    }
+
+         .section-home {
+      background-image: url("bg.jpg");
+      position:relative;
+  background-repeat: repeat;      
+  background-size:1000px;
+  height:600px;
+  padding-top: 200px; 
+  padding-bottom:70px;    
+  display:flex;
+  justify-content:center;
+  align-items:center;           
+  text-align: center;
+    }
+    .overlay1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;          
+  transform: translate(-50%, -35%);
+  z-index: 1;            
+}
+
+    .overlay2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;          
+  transform:rotate(5deg);
+  animation: rotate 4s ease-in-out infinite alternate;
+  z-index: 1;     
+}
+@keyframes rotate {
+  0% {
+    transform:rotate(-4deg);
+  }
+  100% {
+    transform: rotate(4deg);
+  }
+}
+    .home-content h1 {
+  font-family:"Henny Penny", system-ui;
+  position: relative;
+  color:#501919;
+   transform:translate(-15%,50%);
+   margin-bottom:10px;
+  z-index: 2;            
+}
+
+.skills {
+     font-family:"Henny Penny", system-ui;
+  position: relative;
+  color:#501919;
+  transform:translate(10%,0%);
+  z-index: 2;  
+
+}
+
+ .sk li {
+    font-family:sunshiney, serif;
+    margin-right:13px;
+    color:#b27752;
+    list-style: none;
+     transform:translate(-15%,35%);
+    }
+
+    .sk {
+        display:flex;
+        margin: 0px 35px 35px 35px;
+    }
+
+    .sk li {
+        font-size:27px;
+        display:flex;
+        font-size:22px;
+        background-color: #392010;
+        border-radius: 23px;
+        padding:10px;
+        font-weight:2000px;
+        text-decoration: none;
+    }
+  </style>
+    <!-- Project Section ------------------------------------------------ -->
+<div id = proj></div>
+<div class="proj-section">
+    <h2>Projects</h2>
+    <p> These are some of the projects I’ve done for my classes at Thaddeus Stevens. </p>
+<div class="projects-row">
+        <img src="paper.png" class="overlay3">
+            <div class="projects-row-img-cont">
+              <img src="tv.png" class="tvscreen">
+              <img src="pro1.png" class="undertv">
+            </div>
+            <div class="projects-row-content">
+              <h3 class="projects-row-content-title">Project 1</h3>
+              <p class="projects-row-content-desc">
+                <div class="scroll-box">
+            <p> This JavaScript Project tasked us to implement our own version of an existing function, but also allowed us to use any function other than the one in question. We had to remake the following functions: Array.map, array.filter, array.sort, array.concat, Array.every, array.some, array.includes, & array.join. A lot of these were easy to do, and I used  for loops to go through each element one at a time for problems like array.map.</p>
+              </div>
+              <a class="btn" a href="https://drive.google.com/file/d/1WD2y4on_ey-17cNajwQKsdgbA_pej81_/view?usp=sharing">Download</a>
+            </div>
+          </div>
+<div class="projects-row">
+        <img src="paper.png" class="overlay3">
+            <div class="projects-row-img-cont">
+              <img src="tv.png" class="tvscreen">
+              <img src="pro2.png" class="undertv">
+            </div>
+            <div class="projects-row-content">
+              <h3 class="projects-row-content-title">Project 2</h3>
+              <p class="projects-row-content-desc">
+                <div class="scroll-box">
+            <p> This HTML & CSS project tasked us to create our own website for a made-up restaurant. This project is much older, but my creativity is shown throughout the entire website itself. Most of the graphics were edited by me, and this was one of my first introductions to hovering effects/drop-down menus.</p>
+              </div>
+              <a class="btn" a href="https://drive.google.com/file/d/1NP-4UpaDszlW-sYPfB34nyyPsgeoWAOX/view?usp=sharing">Download</a>
+            </div>
+          </div>
+          <div class="projects-row">
+        <img src="paper.png" class="overlay3">
+            <div class="projects-row-img-cont">
+              <img src="tv.png" class="tvscreen">
+              <img src="pro3.png" class="undertv">
+            </div>
+            <div class="projects-row-content">
+              <h3 class="projects-row-content-title">Project 3</h3>
+              <p class="projects-row-content-desc">
+                <div class="scroll-box">
+            <p> This HTML & CSS project tasked us with making a responsive image gallery in a column layout that included 4 images with hover effects. It also had to be compatible with smaller devices and use media queries. I made a gallery showcasing music albums I listen to with CDs that spin when you hover over it.</p>
+              </div>
+              <a class="btn" a href="https://drive.google.com/file/d/1QgHVH-KdkPvSsjSEeF0EQsZ4ntHfo3dG/view?usp=sharing">Download</a>
+            </div>
+          </div>
+        </div>
+</section>
+<style>
+
+  .overlay3 {
+  position: absolute;
+  width: 500px;          
+  transform: translate(90%, -20%);
+  z-index: 2;            
+}
+
+.scroll-box {
+    width: 400px;       
+    height: 130px;     
+    padding: 10px;
+    overflow-y: auto;   
+    overflow-x: hidden; 
+}
+
+.tvscreen {
+    position: relative;
+    z-index:2;
+}
+
+.undertv {
+     position: absolute;
+    z-index:1;
+    transform: translate(-120%, 35%);
+    width:400px;
+}
+
+.proj-section {
+  background-image: url("bg3.jpg");
+  background-size:600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.projects-row-content {
+    z-index: 2;
+    transform: translate(3%, -2%);
+}
+
+.projects-row-content-title {
+    font-size: 25px;
+    font-family:"Henny Penny";
+}
+
+.projects-row-img-cont {
+width:500px;
+float: right;
+display: block;
+ position: relative;
+transform: translate(-20%, -25%);
+}
+
+.proj-section p {
+    font-size:22px;
+     font-family:sunshiney, sans-serif;
+}
+
+
+.proj-section h2 {
+    margin-bottom:30px;
+     font-size:32px;
+        display:flex;
+        font-family:"Henny Penny";
+        color: #180603;
+        margin-right:30px;
+        font-weight:2000px;
+}
+
+.btn {
+    font-family:sunshiney, sans-serif;
+    font-size:22px;
+    color:#b27752;
+    display:inline-block;
+        font-size:22px;
+        background-color: #180603;
+        border-radius: 23px;
+        border:2px #180603;
+        padding:10px;
+        margin-top:20px;
+        text-decoration: none;
+        cursor: pointer;
+}
+
+      .section-steps {
+        background-color: #F4F4F4;
+         padding: 80x 0;
+        }
+
+     .section-steps h2 {
+        font-size:180%;
+        word-spacing: 2px;
+        letter-spacing:1px;
+        font-weight:300;
+        text-transform:uppercase;
+        text-align:center;
+        margin-left:1%;
+        margin: 0 0 30px 78.9062px;
+        padding-top:60px;
+     }  
+
+     .wrapAll {
+        display:flex;
+        flex-direction: row;
+        padding: 0 17%;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 1140px;
+        margin:0 auto;
+        margin-left:25%;
+        padding-bottom:40px;
+     }
+
+.projects-row {
+    margin-top: 100px;
+    display: grid;
+grid-template-columns: 400px 400px;
+text-align: justify;
+position: relative;
+    grid-gap: 5rem;
+}
+</style>
+
+  <!-- Info Section ------------------------------------------------ -->
+<div id = cont></div>
+<div class="form-box">
+            <h2>Contact Me!</h2>
+            <div class="row">
+                 <form method="post" action="#" class="contact-form">
+                 <div class="row">
+                    <div class="col span-1-of-3">
+                    <label for="name">Name</label>
+                </div>
+                    <div class="col span-2-of-3">
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                <label for="email">Email</label>
+                </div>
+                    <div class="col span-2-of-3">
+                    <input type="Email" name="email" id="email" placeholder="Enter your email" required="">
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-check">
+                    <div class="row">
+                    <div class="col span-1-of-3">
+                    <label>Message</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                        <textarea name="message" placeholder="Enter your message"></textarea>
+                    </div>
+                </div>
+                    <div class="row">
+                    <div class="col span-1-of-3">
+                    <label>&nbsp;</label>
+                    </div>
+                        <div class="col span-2-of-3">
+                        <input type="submit" value="Send it!">
+                    </div>
+                </div>
+        </div>
+     </div>
+    </form>
+<style>
+
+.form-box {
+  background-image: url("bg2.jpg");
+  background-size:1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.form-box label  {
+    font-size:25px;
+    font-family:sunshiney, sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder  {
+     font-size:22px;
+    font-family:sunshiney, sans-serif;
+}
+
+.form-box h2 {
+    margin-bottom:30px;
+     font-size:32px;
+        display:flex;
+        font-family:"Henny Penny";
+        color: #180603;
+        margin-right:30px;
+        font-weight:2000px;
+}
+
+.info-row {
+    max-width: 1140px;
+    margin: 0 auto;
+    display:flex
+}
+
+.label {
+    text-align: center;
+}
+
+.span-1-of-3, .span-2-of-3 {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    padding: 3px 0; 
+    margin: 0; 
+}
+.contact-form .span-1-of-3 {    
+    width: 220px;
+} 
+
+.span-2-of-3 {
+     width: 600px;
+ }
+
+.section-forms {
+    padding: 80px 0;
+    text-align: center;
+}
+
+label {
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+input[type=submit] {
+        margin: 0 auto;
+        font-family:sunshiney, serif;
+    color:#b27752;
+        font-size:22px;
+        background-color: #180603;
+        border-radius: 23px;
+        border:2px #180603;
+        padding:10px;
+        text-decoration: none;
+        cursor: pointer;
+}
+
+input[type=submit]:hover {
+    transform:scale(1.1);
+}
+textarea {
+    height: 100px;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+</style>
+
+<!-- Footer ------------------------------------------------ -->
+ <div class="footer-top"></div>
+  </div>
+<footer>
+  <div class="info">
+    <p>Elizabeth Zimmerman</p>
+    <div class="email">abethzimmer06@gmail.com</div>
+  </div>
+</footer>
+<style>
+    footer {
+      background-color: #392110;
+  color: white;     
+  padding: 40px 20px; 
+  width: 100%;
+  text-align: center;
+}
+
+
+    .info {
+        margin-left:30px;
+        font-size:50px;
+    }
+
+    .footer-top {
+        background-image:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("banner2.png");
+        background-size:auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height:150px;
+        width:1366px;
+        position: relative;
+        transform:translate(0%,29%);
+         z-index: 10;
+        }
+    
+
+.info p {
+        font-size:27px;
+        display:flex;
+        font-family:"Henny Penny";
+        color: #1c1008;
+        margin-right:30px;
+        font-weight:2000px;
+        text-decoration: none;
+        text-shadow: 
+        -1px -1px 0 #3e2615,  
+        1px -1px 0 #3e2615,
+        -1px 1px 0 #3e2615,
+        1px 1px 0 #3e2615;
+
+    }
+.email {
+        display:flex;
+         font-family:sunshiney, serif;
+         font-size:22px;
+        color: #1c1008;
+        margin-right:30px;
+        font-weight:2000px;
+        text-decoration: none;
+        text-shadow: 
+        -1px -1px 0 #3e2615,  
+        1px -1px 0 #3e2615,
+        -1px 1px 0 #3e2615,
+        1px 1px 0 #3e2615;
+}
+
+</style>
+</body>
+</html> 
+</body>
+</html> 
